@@ -369,7 +369,7 @@ class PrettyColorsTests: XCTestCase {
 						let wrap = (wrapAndSuffix.0 + [parameter] as Color.Wrap)
 						let suffix = wrapAndSuffix.1
 						let string = "• " + wrap.wrap("__|øat·•ªº^∆©|__") +
-							" " + NSString(format: "%02d", i) + " + " + suffix
+							" " + (NSString(format: "%02d", i) as String) + " + " + suffix
 						println(string)
 					}
 				}
